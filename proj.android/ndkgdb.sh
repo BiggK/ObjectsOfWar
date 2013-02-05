@@ -1,5 +1,5 @@
-APPNAME="HelloCpp"
-APP_ANDROID_NAME="org.cocos2dx.hellocpp"
+APPNAME="ObjectsOfWar"
+APP_ANDROID_NAME="com.killian.objectsofwar"
 
 if [ -z "${SDK_ROOT+aaa}" ]; then
 # ... if SDK_ROOT is not set, use "$HOME/bin/android-sdk"

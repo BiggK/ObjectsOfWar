@@ -1,3 +1,5 @@
 proj.win32/Debug.win32/*
 Resources/Thumbs.db
 proj.android/assets/*
+proj.android/obj
+proj.android/libs/armeabi/libobjectsofwar.so
