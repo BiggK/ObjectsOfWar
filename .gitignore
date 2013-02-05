@@ -3,3 +3,7 @@ Resources/Thumbs.db
 proj.android/assets/*
 proj.android/obj
 proj.android/libs/armeabi/libobjectsofwar.so
+proj.android/bin
+proj.android/.settings/org.eclipse.jdt.core.prefs
+proj.android/gen/com/killian/objectsofwar/BuildConfig.java
+proj.android/gen/com/killian/objectsofwar/R.java
