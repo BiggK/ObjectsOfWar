@@ -43,8 +43,8 @@ bool HelloWorld::init()
 
         // Create a "close" menu item with close icon, it's an auto release object.
         CCMenuItemImage *pCloseItem = CCMenuItemImage::create(
-            "CloseNormal.png",
-            "CloseSelected.png",
+            "ui\\CloseNormal.png",
+            "ui\\CloseSelected.png",
             this,
             menu_selector(HelloWorld::menuCloseCallback));
         CC_BREAK_IF(! pCloseItem);
@@ -60,28 +60,20 @@ bool HelloWorld::init()
         // Add the menu to HelloWorld layer as a child layer.
         this->addChild(pMenu, 1);
 
-        // 2. Add a label shows "Hello World".
-
-        // Create a label and initialize with string "Hello World".
-        CCLabelTTF* pLabel = CCLabelTTF::create("Hello World", "Arial", 24);
-        CC_BREAK_IF(! pLabel);
-
-        // Get window size and place the label upper. 
-        CCSize size = CCDirector::sharedDirector()->getWinSize();
-        pLabel->setPosition(ccp(size.width / 2, size.height - 50));
-
-        // Add the label to HelloWorld layer as a child layer.
-        this->addChild(pLabel, 1);
-
         // 3. Add add a splash screen, show the cocos2d splash image.
-        CCSprite* pSprite = CCSprite::create("HelloWorld.png");
+        CCSprite* pSprite = CCSprite::create("ui\\Title.png");
         CC_BREAK_IF(! pSprite);
 
         // Place the sprite on the center of the screen
+        CCSize size = CCDirector::sharedDirector()->getWinSize();
         pSprite->setPosition(ccp(size.width/2, size.height/2));
 
         // Add the sprite to HelloWorld layer as a child layer.
         this->addChild(pSprite, 0);
+
+		//add audio
+		CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic(
+		"audio/theme.mp3", true); 
 
         bRet = true;
     } while (0);

@@ -122,9 +122,58 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="..\Resources\galaxyS3\CloseNormal.png" />
-    <None Include="..\Resources\galaxyS3\CloseSelected.png" />
-    <None Include="..\Resources\galaxyS3\HelloWorld.png" />
+    <None Include="..\Resources\audio\enemy_move.mp3" />
+    <None Include="..\Resources\audio\player_move.mp3" />
+    <None Include="..\Resources\audio\theme.mp3" />
+    <None Include="..\Resources\galaxyS3\sprites\bad_knight_001.png" />
+    <None Include="..\Resources\galaxyS3\sprites\bad_knight_002.png" />
+    <None Include="..\Resources\galaxyS3\sprites\bad_knight_003.png" />
+    <None Include="..\Resources\galaxyS3\sprites\bad_knight_004.png" />
+    <None Include="..\Resources\galaxyS3\sprites\bad_knight_005.png" />
+    <None Include="..\Resources\galaxyS3\sprites\bad_knight_006.png" />
+    <None Include="..\Resources\galaxyS3\sprites\bad_knight_007.png" />
+    <None Include="..\Resources\galaxyS3\sprites\boot.png" />
+    <None Include="..\Resources\galaxyS3\sprites\button_64x64.png" />
+    <None Include="..\Resources\galaxyS3\sprites\button_pressed_64x64.png" />
+    <None Include="..\Resources\galaxyS3\sprites\cursor_blue.png" />
+    <None Include="..\Resources\galaxyS3\sprites\cursor_red.png" />
+    <None Include="..\Resources\galaxyS3\sprites\cursor_yellow.png" />
+    <None Include="..\Resources\galaxyS3\sprites\harpy_001.png" />
+    <None Include="..\Resources\galaxyS3\sprites\harpy_002.png" />
+    <None Include="..\Resources\galaxyS3\sprites\harpy_003.png" />
+    <None Include="..\Resources\galaxyS3\sprites\harpy_004.png" />
+    <None Include="..\Resources\galaxyS3\sprites\harpy_005.png" />
+    <None Include="..\Resources\galaxyS3\sprites\harpy_006.png" />
+    <None Include="..\Resources\galaxyS3\sprites\harpy_007.png" />
+    <None Include="..\Resources\galaxyS3\sprites\hawk_knight_001.png" />
+    <None Include="..\Resources\galaxyS3\sprites\hawk_knight_002.png" />
+    <None Include="..\Resources\galaxyS3\sprites\hawk_knight_003.png" />
+    <None Include="..\Resources\galaxyS3\sprites\hawk_knight_004.png" />
+    <None Include="..\Resources\galaxyS3\sprites\hawk_knight_005.png" />
+    <None Include="..\Resources\galaxyS3\sprites\hawk_knight_006.png" />
+    <None Include="..\Resources\galaxyS3\sprites\hawk_knight_007.png" />
+    <None Include="..\Resources\galaxyS3\sprites\knight_green_001.png" />
+    <None Include="..\Resources\galaxyS3\sprites\knight_green_002.png" />
+    <None Include="..\Resources\galaxyS3\sprites\knight_green_003.png" />
+    <None Include="..\Resources\galaxyS3\sprites\knight_green_004.png" />
+    <None Include="..\Resources\galaxyS3\sprites\knight_green_005.png" />
+    <None Include="..\Resources\galaxyS3\sprites\knight_green_006.png" />
+    <None Include="..\Resources\galaxyS3\sprites\knight_green_007.png" />
+    <None Include="..\Resources\galaxyS3\sprites\small_boot.png" />
+    <None Include="..\Resources\galaxyS3\sprites\sprites-hd.pv.plist" />
+    <None Include="..\Resources\galaxyS3\sprites\sprites-hd.pvr.ccz" />
+    <None Include="..\Resources\galaxyS3\sprites\sprite_sheet.tps" />
+    <None Include="..\Resources\galaxyS3\sprites\sword.png" />
+    <None Include="..\Resources\galaxyS3\sprites\tile_green_48x48.png" />
+    <None Include="..\Resources\galaxyS3\sprites\tile_red_48x48.png" />
+    <None Include="..\Resources\galaxyS3\ui\battle_grass.png" />
+    <None Include="..\Resources\galaxyS3\ui\btn_192x64_pressed.png" />
+    <None Include="..\Resources\galaxyS3\ui\btn_192x64_released.png" />
+    <None Include="..\Resources\galaxyS3\ui\CloseNormal.png" />
+    <None Include="..\Resources\galaxyS3\ui\CloseSelected.png" />
+    <None Include="..\Resources\galaxyS3\ui\cursor.png" />
+    <None Include="..\Resources\galaxyS3\ui\HelloWorld.png" />
+    <None Include="..\Resources\galaxyS3\ui\title.png" />
     <None Include="res\ObjectsOfWar.ico" />
   </ItemGroup>
   <ItemGroup>

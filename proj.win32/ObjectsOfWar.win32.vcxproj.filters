@@ -13,19 +13,178 @@
       <UniqueIdentifier>{3a4ce3cb-984b-4139-ba2b-4baf7bbfa18e}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;png;manifest</Extensions>
     </Filter>
+    <Filter Include="resource\galaxyS3">
+      <UniqueIdentifier>{5e6b1585-afa5-4cd1-89ea-82b93af46324}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\galaxyS3\ui">
+      <UniqueIdentifier>{30e78696-a1c8-4d4a-8e93-256ccec8a861}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\galaxyS3\sprites">
+      <UniqueIdentifier>{af587dfa-bcf9-4213-a1b7-79368b9c70fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\audio">
+      <UniqueIdentifier>{8c561477-6c4a-4621-8da3-e2b3fbc02633}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="res\ObjectsOfWar.ico">
       <Filter>resource</Filter>
     </None>
-    <None Include="..\Resources\galaxyS3\CloseNormal.png">
-      <Filter>resource</Filter>
+    <None Include="..\Resources\galaxyS3\ui\HelloWorld.png">
+      <Filter>resource\galaxyS3\ui</Filter>
     </None>
-    <None Include="..\Resources\galaxyS3\CloseSelected.png">
-      <Filter>resource</Filter>
+    <None Include="..\Resources\galaxyS3\ui\battle_grass.png">
+      <Filter>resource\galaxyS3\ui</Filter>
     </None>
-    <None Include="..\Resources\galaxyS3\HelloWorld.png">
-      <Filter>resource</Filter>
+    <None Include="..\Resources\galaxyS3\ui\btn_192x64_pressed.png">
+      <Filter>resource\galaxyS3\ui</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\ui\btn_192x64_released.png">
+      <Filter>resource\galaxyS3\ui</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\ui\CloseNormal.png">
+      <Filter>resource\galaxyS3\ui</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\ui\CloseSelected.png">
+      <Filter>resource\galaxyS3\ui</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\ui\cursor.png">
+      <Filter>resource\galaxyS3\ui</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\ui\title.png">
+      <Filter>resource\galaxyS3\ui</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\bad_knight_001.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\knight_green_007.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\bad_knight_002.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\bad_knight_003.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\bad_knight_004.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\bad_knight_005.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\bad_knight_006.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\bad_knight_007.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\boot.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\button_64x64.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\button_pressed_64x64.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\cursor_blue.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\cursor_red.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\cursor_yellow.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\harpy_001.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\harpy_002.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\harpy_003.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\harpy_004.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\harpy_005.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\harpy_006.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\harpy_007.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\hawk_knight_001.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\hawk_knight_002.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\hawk_knight_003.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\hawk_knight_004.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\hawk_knight_005.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\hawk_knight_006.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\hawk_knight_007.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\knight_green_001.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\knight_green_002.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\knight_green_003.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\knight_green_004.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\knight_green_005.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\knight_green_006.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\small_boot.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\sword.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\tile_green_48x48.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\tile_red_48x48.png">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\sprites-hd.pvr.ccz">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\sprites-hd.pv.plist">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\galaxyS3\sprites\sprite_sheet.tps">
+      <Filter>resource\galaxyS3\sprites</Filter>
+    </None>
+    <None Include="..\Resources\audio\enemy_move.mp3">
+      <Filter>resource\audio</Filter>
+    </None>
+    <None Include="..\Resources\audio\player_move.mp3">
+      <Filter>resource\audio</Filter>
+    </None>
+    <None Include="..\Resources\audio\theme.mp3">
+      <Filter>resource\audio</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
