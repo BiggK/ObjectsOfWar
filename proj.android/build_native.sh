@@ -1,4 +1,4 @@
-APPNAME="HelloCpp"
+APPNAME="ObjectsOfWar"
 
 # options
 
