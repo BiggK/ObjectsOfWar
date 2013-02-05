@@ -1,5 +1,5 @@
-APPNAME="ObjectsOfWar"
-APP_ANDROID_NAME="com.killian.objectsofwar"
+APPNAME="HelloCpp"
+APP_ANDROID_NAME="org.cocos2dx.hellocpp"
 
 if [ -z "${SDK_ROOT+aaa}" ]; then
 # ... if SDK_ROOT is not set, use "$HOME/bin/android-sdk"
@@ -16,7 +16,7 @@ if [ -z "${COCOS2DX_ROOT+aaa}" ]; then
 # ... find current working directory
     DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 # ... use paths relative to current directory
-    COCOS2DX_ROOT="$DIR/../../.."
+    COCOS2DX_ROOT="$DIR/../.."
     APP_ROOT="$DIR/.."
     APP_ANDROID_ROOT="$DIR"
 else
