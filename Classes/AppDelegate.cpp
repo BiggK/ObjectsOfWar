@@ -3,6 +3,7 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
 #include "SimpleAudioEngine.h"
+#include "AppMacros.h"
 
 using namespace CocosDenshion;
 
@@ -21,7 +22,17 @@ bool AppDelegate::applicationDidFinishLaunching()
 {
     // initialize director
     CCDirector *pDirector = CCDirector::sharedDirector();
+	CCEGLView* pEGLView = CCEGLView::sharedOpenGLView();
+
     pDirector->setOpenGLView(CCEGLView::sharedOpenGLView());
+
+    // Set the design resolution
+    pEGLView->setDesignResolutionSize(designResolutionSize.width, designResolutionSize.height, kResolutionNoBorder);
+	CCSize frameSize = pEGLView->getFrameSize();
+
+	//set scaling, resource directory according to screen resolution
+	CCFileUtils::sharedFileUtils()->setResourceDirectory(galaxyS3Resource.directory);
+    pDirector->setContentScaleFactor(MIN(galaxyS3Resource.size.height/designResolutionSize.height, galaxyS3Resource.size.width/designResolutionSize.width));
 
     // turn on display FPS
     pDirector->setDisplayStats(true);

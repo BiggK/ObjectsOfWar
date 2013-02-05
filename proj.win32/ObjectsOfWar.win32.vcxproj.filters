@@ -18,13 +18,13 @@
     <None Include="res\ObjectsOfWar.ico">
       <Filter>resource</Filter>
     </None>
-    <None Include="..\Resources\CloseSelected.png">
+    <None Include="..\Resources\galaxyS3\CloseNormal.png">
       <Filter>resource</Filter>
     </None>
-    <None Include="..\Resources\CloseNormal.png">
+    <None Include="..\Resources\galaxyS3\CloseSelected.png">
       <Filter>resource</Filter>
     </None>
-    <None Include="..\Resources\HelloWorld.png">
+    <None Include="..\Resources\galaxyS3\HelloWorld.png">
       <Filter>resource</Filter>
     </None>
   </ItemGroup>
@@ -44,6 +44,9 @@
       <Filter>include</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppMacros.h">
       <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>
