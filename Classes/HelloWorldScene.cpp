@@ -43,8 +43,8 @@ bool HelloWorld::init()
 
         // Create a "close" menu item with close icon, it's an auto release object.
         CCMenuItemImage *pCloseItem = CCMenuItemImage::create(
-            "ui\\CloseNormal.png",
-            "ui\\CloseSelected.png",
+            "ui/CloseNormal.png",
+            "ui/CloseSelected.png",
             this,
             menu_selector(HelloWorld::menuCloseCallback));
         CC_BREAK_IF(! pCloseItem);
@@ -61,7 +61,7 @@ bool HelloWorld::init()
         this->addChild(pMenu, 1);
 
         // 3. Add add a splash screen, show the cocos2d splash image.
-        CCSprite* pSprite = CCSprite::create("ui\\Title.png");
+        CCSprite* pSprite = CCSprite::create("ui/title.png");
         CC_BREAK_IF(! pSprite);
 
         // Place the sprite on the center of the screen
