@@ -1,4 +1,5 @@
 #include "HelloWorldScene.h"
+#include "NewGameIntroScene.h"
 
 using namespace cocos2d;
 
@@ -41,19 +42,42 @@ bool HelloWorld::init()
 
         // 1. Add a menu item with "X" image, which is clicked to quit the program.
 
-        // Create a "close" menu item with close icon, it's an auto release object.
-        CCMenuItemImage *pCloseItem = CCMenuItemImage::create(
-            "ui/CloseNormal.png",
-            "ui/CloseSelected.png",
-            this,
-            menu_selector(HelloWorld::menuCloseCallback));
-        CC_BREAK_IF(! pCloseItem);
 
-        // Place the menu item bottom-right conner.
-        pCloseItem->setPosition(ccp(CCDirector::sharedDirector()->getWinSize().width - 20, 20));
+
+		//Create settings button
+        CCMenuItemImage *pSettingsButton = CCMenuItemImage::create(
+            "ui/gears-hi_128x128_white.png",
+            "ui/gears-hi_128x128_green.png",
+            this,
+			menu_selector(HelloWorld::SettingsButtonCallback));
+        CC_BREAK_IF(! pSettingsButton);
+
+		//Create load button
+        CCMenuItemImage *pLoadButton = CCMenuItemImage::create(
+            "ui/load-hi_128x128_white.png",
+            "ui/load-hi_128x128_green.png",
+            this,
+			menu_selector(HelloWorld::LoadButtonCallback));
+        CC_BREAK_IF(! pLoadButton);
+
+        //Create play button
+        CCMenuItemImage *pPlayButton = CCMenuItemImage::create(
+            "ui/play-hi_128x128_white.png",
+            "ui/play-hi_128x128_green.png",
+            this,
+			menu_selector(HelloWorld::PlayButtonCallback));
+        CC_BREAK_IF(! pPlayButton);
+
+		float iconCenterY = 100;
+		float sideIconXOffset = 150;
+
+        // Position the buttons
+        pSettingsButton->setPosition(ccp(sideIconXOffset, iconCenterY));
+        pLoadButton->setPosition(ccp(CCDirector::sharedDirector()->getWinSize().width / 2, iconCenterY));
+        pPlayButton->setPosition(ccp(CCDirector::sharedDirector()->getWinSize().width - sideIconXOffset, iconCenterY));
 
         // Create a menu with the "close" menu item, it's an auto release object.
-        CCMenu* pMenu = CCMenu::create(pCloseItem, NULL);
+        CCMenu* pMenu = CCMenu::create(pSettingsButton, pLoadButton, pPlayButton, NULL);
         pMenu->setPosition(CCPointZero);
         CC_BREAK_IF(! pMenu);
 
@@ -81,9 +105,21 @@ bool HelloWorld::init()
     return bRet;
 }
 
-void HelloWorld::menuCloseCallback(CCObject* pSender)
+void HelloWorld::SettingsButtonCallback(CCObject* pSender)
 {
     // "close" menu item clicked
     CCDirector::sharedDirector()->end();
 }
 
+void HelloWorld::LoadButtonCallback(CCObject* pSender)
+{
+    // "close" menu item clicked
+    CCDirector::sharedDirector()->end();
+}
+
+void HelloWorld::PlayButtonCallback(CCObject* pSender)
+{
+	CCDirector *pDirector = CCDirector::sharedDirector();
+    CCScene *pScene = NewGameIntroScene::scene();
+	pDirector->pushScene(pScene);
+}

@@ -208,6 +208,12 @@
     <ClInclude Include="..\Classes\AppMacros.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\StringTable.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NewGameIntroScene.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -217,6 +223,9 @@
       <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NewGameIntroScene.cpp">
       <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>
