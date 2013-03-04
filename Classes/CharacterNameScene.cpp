@@ -81,15 +81,15 @@ bool CharacterNameScene::init()
 		float windowWidth = CCDirector::sharedDirector()->getWinSize().width;
 
 		//add text
-		m_pText = CCLabelTTF::labelWithString(StringTable[2], CCSizeMake(1000, 0), kCCTextAlignmentCenter, "Arial", 100);
+		m_pText = CCLabelTTF::labelWithString(StringTable[1], CCSizeMake(1000, 0), kCCTextAlignmentCenter, "Arial", 100);
 		m_pText->setColor(ccc3(255, 255, 255));
-		m_pText->setPosition(ccp(windowWidth / 2,680));
+		m_pText->setPosition(ccp(windowWidth / 2,550));
         addChild(m_pText);
 
 		//add input
-		m_pCharacterNameField = CCTextFieldTTF::textFieldWithPlaceHolder("Name", CCSizeMake(1000, 100 ), kCCTextAlignmentCenter, "Arial", 100 );
+		m_pCharacterNameField = CCTextFieldTTF::textFieldWithPlaceHolder("Name", CCSizeMake(1000, 0), kCCTextAlignmentCenter, "Arial", 100 );
 		m_pCharacterNameField->setColor(ccc3(255, 255, 255));
-		m_pCharacterNameField->setPosition(ccp(windowWidth/2, 500));
+		m_pCharacterNameField->setPosition(ccp(windowWidth/2, 400));
         addChild(m_pCharacterNameField);
 
         bRet = true;

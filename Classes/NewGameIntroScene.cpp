@@ -62,8 +62,8 @@ bool NewGameIntroScene::init()
         this->addChild(pMenu, 1);
 
 		//add audio
-		CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic(
-		"audio/theme.mp3", true); 
+		//CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic(
+		//"audio/theme.mp3", true); 
 
 		//add text
 		m_pText = CCLabelTTF::labelWithString(StringTable[m_stringIndex], CCSizeMake(1000, 0), kCCTextAlignmentCenter, "FreeSans", 100);
@@ -79,15 +79,7 @@ bool NewGameIntroScene::init()
 
 void NewGameIntroScene::SkipButtonCallback(CCObject* pSender)
 {
-	if(m_stringIndex < 1)
-	{
-		++m_stringIndex;
-		m_pText->setString(StringTable[m_stringIndex]);
-	}
-	else
-	{
-		CCDirector *pDirector = CCDirector::sharedDirector();
-		CCScene *pScene = CharacterNameScene::scene();
-		pDirector->pushScene(pScene);
-	}
+	CCDirector *pDirector = CCDirector::sharedDirector();
+	CCScene *pScene = CharacterNameScene::scene();
+	pDirector->pushScene(pScene);
 }
