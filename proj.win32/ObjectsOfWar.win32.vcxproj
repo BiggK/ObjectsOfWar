@@ -182,6 +182,7 @@
   <ItemGroup>
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="..\Classes\AppMacros.h" />
+    <ClInclude Include="..\Classes\CharacterNameScene.h" />
     <ClInclude Include="..\Classes\HelloWorldScene.h" />
     <ClInclude Include="..\Classes\NewGameIntroScene.h" />
     <ClInclude Include="..\Classes\StringTable.h" />
@@ -190,6 +191,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\CharacterNameScene.cpp" />
     <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
     <ClCompile Include="..\Classes\NewGameIntroScene.cpp" />
     <ClCompile Include="main.cpp" />

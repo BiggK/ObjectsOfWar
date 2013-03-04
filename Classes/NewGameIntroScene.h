@@ -15,6 +15,10 @@ public:
 
     // implement the "static node()" method manually
     CREATE_FUNC(NewGameIntroScene);
+
+private:
+	unsigned int m_stringIndex;
+	CCLabelTTF * m_pText;
 };
 
 #endif

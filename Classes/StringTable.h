@@ -4,9 +4,9 @@
 #include "cocos2d.h"
 
 static const char* StringTable[] = { 
-	"OMFG it works!  Here's a story about a man named Brady...",	//0
-	"second",
-	"third"
+	"OMFG it works!  Here's a story about a man named Brady...More stufffffffffffffffffffffffffff",	//0
+	"Holy shit.  New string herrrr.",
+	"Enter your name.",
 };
 
 #endif

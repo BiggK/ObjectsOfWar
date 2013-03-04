@@ -214,6 +214,9 @@
     <ClInclude Include="..\Classes\NewGameIntroScene.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\CharacterNameScene.h">
+      <Filter>include</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -226,6 +229,9 @@
       <Filter>source</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\NewGameIntroScene.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CharacterNameScene.cpp">
       <Filter>source</Filter>
     </ClCompile>
   </ItemGroup>

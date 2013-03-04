@@ -1,4 +1,5 @@
 #include "NewGameIntroScene.h"
+#include "CharacterNameScene.h"
 #include "StringTable.h"
 
 using namespace cocos2d;
@@ -28,6 +29,7 @@ CCScene* NewGameIntroScene::scene()
 bool NewGameIntroScene::init()
 {
     bool bRet = false;
+	m_stringIndex = 0;
     do 
     {
         CC_BREAK_IF(! CCLayer::init());
@@ -64,10 +66,10 @@ bool NewGameIntroScene::init()
 		"audio/theme.mp3", true); 
 
 		//add text
-		CCLabelTTF * text = CCLabelTTF::labelWithString(StringTable[0], CCSizeMake(1000, 0), CCTextAlignment::kCCTextAlignmentCenter, "Thonburi", 100);
-		text->setColor(ccc3(255, 255, 255));
-		text->setPosition(ccp(640,360));
-        addChild(text);
+		m_pText = CCLabelTTF::labelWithString(StringTable[m_stringIndex], CCSizeMake(1000, 0), kCCTextAlignmentCenter, "FreeSans", 100);
+		m_pText->setColor(ccc3(255, 255, 255));
+		m_pText->setPosition(ccp(640,360));
+        addChild(m_pText);
 
         bRet = true;
     } while (0);
@@ -77,6 +79,15 @@ bool NewGameIntroScene::init()
 
 void NewGameIntroScene::SkipButtonCallback(CCObject* pSender)
 {
-    // "close" menu item clicked
-    CCDirector::sharedDirector()->end();
+	if(m_stringIndex < 1)
+	{
+		++m_stringIndex;
+		m_pText->setString(StringTable[m_stringIndex]);
+	}
+	else
+	{
+		CCDirector *pDirector = CCDirector::sharedDirector();
+		CCScene *pScene = CharacterNameScene::scene();
+		pDirector->pushScene(pScene);
+	}
 }
