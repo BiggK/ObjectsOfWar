@@ -1,5 +1,7 @@
 #include "CharacterNameScene.h"
 #include "StringTable.h"
+#include "GameDataModel.h"
+#include "ScenarioScene.h"
 
 using namespace cocos2d;
 
@@ -98,11 +100,6 @@ bool CharacterNameScene::init()
     return bRet;
 }
 
-void CharacterNameScene::SkipButtonCallback(CCObject* pSender)
-{
-
-}
-
 void CharacterNameScene::onClickTrackNode(bool bClicked)
 {
     CCTextFieldTTF * pTextField = (CCTextFieldTTF*)m_pCharacterNameField;
@@ -157,4 +154,14 @@ void CharacterNameScene::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
 
     this->onClickTrackNode(rect.containsPoint(point));
     CCLOG("----------------------------------");
+}
+
+void CharacterNameScene::SkipButtonCallback(CCObject* pSender)
+{
+	GameDataModel::getInstance().SetPlayerName(m_pCharacterNameField->getString());
+
+	CCDirector *pDirector = CCDirector::sharedDirector();
+	CCScene* pScene = ScenarioScene::create();
+	pScene->init();
+	pDirector->replaceScene(dynamic_cast<cocos2d::CCScene*>(pScene));
 }
