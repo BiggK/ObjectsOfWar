@@ -189,7 +189,12 @@
     <ClInclude Include="..\Classes\ScenarioMapLayer.h" />
     <ClInclude Include="..\Classes\ScenarioModel.h" />
     <ClInclude Include="..\Classes\ScenarioScene.h" />
+    <ClInclude Include="..\Classes\StoryConfig.h" />
+    <ClInclude Include="..\Classes\StoryController.h" />
+    <ClInclude Include="..\Classes\StoryModel.h" />
+    <ClInclude Include="..\Classes\StoryScene.h" />
     <ClInclude Include="..\Classes\StringTable.h" />
+    <ClInclude Include="..\Classes\TextWallLayer.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
@@ -202,6 +207,11 @@
     <ClCompile Include="..\Classes\ScenarioMapLayer.cpp" />
     <ClCompile Include="..\Classes\ScenarioModel.cpp" />
     <ClCompile Include="..\Classes\ScenarioScene.cpp" />
+    <ClCompile Include="..\Classes\StoryConfig.cpp" />
+    <ClCompile Include="..\Classes\StoryController.cpp" />
+    <ClCompile Include="..\Classes\StoryModel.cpp" />
+    <ClCompile Include="..\Classes\StoryScene.cpp" />
+    <ClCompile Include="..\Classes\TextWallLayer.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -10,10 +10,6 @@
     <Filter Include="Layers">
       <UniqueIdentifier>{1ec8d907-673b-43de-a855-a412159b7330}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Application">
-      <UniqueIdentifier>{f0877a65-d141-48fe-96de-1c253a316fca}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
-    </Filter>
     <Filter Include="Resources">
       <UniqueIdentifier>{3a4ce3cb-984b-4139-ba2b-4baf7bbfa18e}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;png;manifest</Extensions>
@@ -32,6 +28,13 @@
     </Filter>
     <Filter Include="Controllers">
       <UniqueIdentifier>{aaea7ca8-44ff-4d5e-99af-d4db03158659}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{6e3bbaf3-243b-42bc-b594-4c3303494f21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{f0877a65-d141-48fe-96de-1c253a316fca}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -237,6 +240,21 @@
     <ClInclude Include="..\Classes\GameDataModel.h">
       <Filter>Models</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\StoryConfig.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StoryModel.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StoryController.h">
+      <Filter>Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StoryScene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TextWallLayer.h">
+      <Filter>Layers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\ScenarioModel.cpp">
@@ -265,6 +283,21 @@
     </ClCompile>
     <ClCompile Include="..\Classes\GameDataModel.cpp">
       <Filter>Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\StoryModel.cpp">
+      <Filter>Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\StoryConfig.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\StoryController.cpp">
+      <Filter>Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\StoryScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TextWallLayer.cpp">
+      <Filter>Layers</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
