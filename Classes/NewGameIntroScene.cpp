@@ -66,7 +66,7 @@ bool NewGameIntroScene::init()
 		//"audio/theme.mp3", true); 
 
 		//add text
-		m_pText = CCLabelTTF::labelWithString(StringTable[m_stringIndex], CCSizeMake(1000, 0), kCCTextAlignmentCenter, "FreeSans", 100);
+		m_pText = CCLabelTTF::create(StringTable[m_stringIndex], "FreeSans", 100, CCSizeMake(1000, 0), kCCTextAlignmentCenter);
 		m_pText->setColor(ccc3(255, 255, 255));
 		m_pText->setPosition(ccp(640,360));
         addChild(m_pText);

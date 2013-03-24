@@ -83,7 +83,7 @@ bool CharacterNameScene::init()
 		float windowWidth = CCDirector::sharedDirector()->getWinSize().width;
 
 		//add text
-		m_pText = CCLabelTTF::labelWithString(StringTable[1], CCSizeMake(1000, 0), kCCTextAlignmentCenter, "Arial", 100);
+		m_pText = CCLabelTTF::create(StringTable[1], "Arial", 100, CCSizeMake(1000, 0), kCCTextAlignmentCenter);
 		m_pText->setColor(ccc3(255, 255, 255));
 		m_pText->setPosition(ccp(windowWidth / 2,550));
         addChild(m_pText);
