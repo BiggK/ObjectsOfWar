@@ -2,6 +2,7 @@
 #include "StringTable.h"
 #include "GameDataModel.h"
 #include "ScenarioScene.h"
+#include "ScenarioConfig.h"
 
 using namespace cocos2d;
 
@@ -161,7 +162,9 @@ void CharacterNameScene::SkipButtonCallback(CCObject* pSender)
 	GameDataModel::getInstance().SetPlayerName(m_pCharacterNameField->getString());
 
 	CCDirector *pDirector = CCDirector::sharedDirector();
-	CCScene* pScene = ScenarioScene::create();
+	ScenarioScene* pScene = ScenarioScene::create();
+	//TODO: Memory Leak
+	pScene->LoadModel(new ScenarioConfig_001());
 	pScene->init();
 	pDirector->replaceScene(dynamic_cast<cocos2d::CCScene*>(pScene));
 }

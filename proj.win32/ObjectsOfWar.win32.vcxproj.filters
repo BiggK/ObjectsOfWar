@@ -29,12 +29,12 @@
     <Filter Include="Controllers">
       <UniqueIdentifier>{aaea7ca8-44ff-4d5e-99af-d4db03158659}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Config">
-      <UniqueIdentifier>{6e3bbaf3-243b-42bc-b594-4c3303494f21}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Application">
       <UniqueIdentifier>{f0877a65-d141-48fe-96de-1c253a316fca}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{6e3bbaf3-243b-42bc-b594-4c3303494f21}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -255,6 +255,15 @@
     <ClInclude Include="..\Classes\TextWallLayer.h">
       <Filter>Layers</Filter>
     </ClInclude>
+    <ClInclude Include="..\Classes\ScenarioMapConfig.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ScenarioMapModel.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ScenarioConfig.h">
+      <Filter>Config</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\ScenarioModel.cpp">
@@ -298,6 +307,15 @@
     </ClCompile>
     <ClCompile Include="..\Classes\TextWallLayer.cpp">
       <Filter>Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ScenarioMapConfig.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ScenarioMapModel.cpp">
+      <Filter>Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ScenarioConfig.cpp">
+      <Filter>Config</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

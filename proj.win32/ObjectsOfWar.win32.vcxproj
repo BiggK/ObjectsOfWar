@@ -188,7 +188,10 @@
     <ClInclude Include="..\Classes\GameDataModel.h" />
     <ClInclude Include="..\Classes\HelloWorldScene.h" />
     <ClInclude Include="..\Classes\NewGameIntroScene.h" />
+    <ClInclude Include="..\Classes\ScenarioConfig.h" />
+    <ClInclude Include="..\Classes\ScenarioMapConfig.h" />
     <ClInclude Include="..\Classes\ScenarioMapLayer.h" />
+    <ClInclude Include="..\Classes\ScenarioMapModel.h" />
     <ClInclude Include="..\Classes\ScenarioModel.h" />
     <ClInclude Include="..\Classes\ScenarioScene.h" />
     <ClInclude Include="..\Classes\StoryConfig.h" />
@@ -206,7 +209,10 @@
     <ClCompile Include="..\Classes\GameDataModel.cpp" />
     <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
     <ClCompile Include="..\Classes\NewGameIntroScene.cpp" />
+    <ClCompile Include="..\Classes\ScenarioConfig.cpp" />
+    <ClCompile Include="..\Classes\ScenarioMapConfig.cpp" />
     <ClCompile Include="..\Classes\ScenarioMapLayer.cpp" />
+    <ClCompile Include="..\Classes\ScenarioMapModel.cpp" />
     <ClCompile Include="..\Classes\ScenarioModel.cpp" />
     <ClCompile Include="..\Classes\ScenarioScene.cpp" />
     <ClCompile Include="..\Classes\StoryConfig.cpp" />

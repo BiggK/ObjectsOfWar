@@ -17,9 +17,17 @@ bool ScenarioScene::init()
 		return false;
 	}
 }
-
 ScenarioScene::~ScenarioScene()
 {
+}
+bool ScenarioScene::LoadModel(ScenarioModel* scenarioModel)
+{
+	m_pScenarioModel = scenarioModel;
+	//Load the scenario map layer from the scenario config
+	m_pScenarioMapLayer = ScenarioMapLayer::create();
+	m_pScenarioMapLayer->LoadModel(m_pScenarioModel->GetScenarioMapModel());
+	this->addChild(m_pScenarioMapLayer);
+	return true;
 }
 void ScenarioScene::Update(float dt)
 {

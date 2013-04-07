@@ -3,6 +3,8 @@
 
 #include "cocos2d.h"
 #include "SimpleAudioEngine.h"
+#include "ScenarioMapConfig.h"
+
 using namespace cocos2d;
 
 class ScenarioModel
@@ -10,7 +12,9 @@ class ScenarioModel
 public:
 	ScenarioModel();
 	virtual ~ScenarioModel();
-private:
+	ScenarioMapModel* GetScenarioMapModel(){return m_pScenarioMapModel;}
+protected:
+	ScenarioMapModel* m_pScenarioMapModel;
 };
 
 #endif
