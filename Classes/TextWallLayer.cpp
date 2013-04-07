@@ -1,10 +1,10 @@
-#include "NewGameIntroScene.h"
+#include "TextWallLayer.h"
 #include "CharacterNameScene.h"
 #include "StringTable.h"
 
 using namespace cocos2d;
 
-CCScene* NewGameIntroScene::scene()
+CCScene* TextWallLayer::scene()
 {
     CCScene * scene = NULL;
     do 
@@ -14,7 +14,7 @@ CCScene* NewGameIntroScene::scene()
         CC_BREAK_IF(! scene);
 
         // 'layer' is an autorelease object
-        NewGameIntroScene *layer = NewGameIntroScene::create();
+        TextWallLayer *layer = TextWallLayer::create();
         CC_BREAK_IF(! layer);
 
         // add layer as a child to scene
@@ -26,7 +26,7 @@ CCScene* NewGameIntroScene::scene()
 }
 
 // on "init" you need to initialize your instance
-bool NewGameIntroScene::init()
+bool TextWallLayer::init()
 {
     bool bRet = false;
 	m_stringIndex = 0;
@@ -44,7 +44,7 @@ bool NewGameIntroScene::init()
             "ui/play-hi_128x128_white.png",
             "ui/play-hi_128x128_green.png",
             this,
-			menu_selector(NewGameIntroScene::SkipButtonCallback));
+			menu_selector(TextWallLayer::SkipButtonCallback));
         CC_BREAK_IF(! pSkipButton);
 
 		float iconCenterY = 100;
@@ -58,7 +58,7 @@ bool NewGameIntroScene::init()
         pMenu->setPosition(CCPointZero);
         CC_BREAK_IF(! pMenu);
 
-        // Add the menu to NewGameIntroScene layer as a child layer.
+        // Add the menu to TextWallLayer layer as a child layer.
         this->addChild(pMenu, 1);
 
 		//add audio
@@ -77,7 +77,7 @@ bool NewGameIntroScene::init()
     return bRet;
 }
 
-void NewGameIntroScene::SkipButtonCallback(CCObject* pSender)
+void TextWallLayer::SkipButtonCallback(CCObject* pSender)
 {
 	CCDirector *pDirector = CCDirector::sharedDirector();
 	CCScene *pScene = CharacterNameScene::scene();

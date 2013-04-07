@@ -1,5 +1,8 @@
 #include "CharacterNameScene.h"
 #include "StringTable.h"
+#include "GameDataModel.h"
+#include "ScenarioScene.h"
+#include "ScenarioConfig.h"
 
 using namespace cocos2d;
 
@@ -81,7 +84,7 @@ bool CharacterNameScene::init()
 		float windowWidth = CCDirector::sharedDirector()->getWinSize().width;
 
 		//add text
-		m_pText = CCLabelTTF::labelWithString(StringTable[1], CCSizeMake(1000, 0), kCCTextAlignmentCenter, "Arial", 100);
+		m_pText = CCLabelTTF::create(StringTable[1], "Arial", 100, CCSizeMake(1000, 0), kCCTextAlignmentCenter);
 		m_pText->setColor(ccc3(255, 255, 255));
 		m_pText->setPosition(ccp(windowWidth / 2,550));
         addChild(m_pText);
@@ -96,11 +99,6 @@ bool CharacterNameScene::init()
     } while (0);
 
     return bRet;
-}
-
-void CharacterNameScene::SkipButtonCallback(CCObject* pSender)
-{
-
 }
 
 void CharacterNameScene::onClickTrackNode(bool bClicked)
@@ -157,4 +155,16 @@ void CharacterNameScene::ccTouchEnded(CCTouch *pTouch, CCEvent *pEvent)
 
     this->onClickTrackNode(rect.containsPoint(point));
     CCLOG("----------------------------------");
+}
+
+void CharacterNameScene::SkipButtonCallback(CCObject* pSender)
+{
+	GameDataModel::getInstance().SetPlayerName(m_pCharacterNameField->getString());
+
+	CCDirector *pDirector = CCDirector::sharedDirector();
+	ScenarioScene* pScene = ScenarioScene::create();
+	//TODO: Memory Leak
+	pScene->LoadModel(new ScenarioConfig_001());
+	pScene->init();
+	pDirector->replaceScene(dynamic_cast<cocos2d::CCScene*>(pScene));
 }

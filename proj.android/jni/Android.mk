@@ -8,9 +8,21 @@ LOCAL_MODULE_FILENAME := libhellocpp
 
 LOCAL_SRC_FILES := hellocpp/main.cpp \
                    ../../Classes/AppDelegate.cpp \
+                   ../../Classes/CharacterNameScene.cpp\
+                   ../../Classes/GameDataModel.cpp\
                    ../../Classes/HelloWorldScene.cpp\
                    ../../Classes/NewGameIntroScene.cpp\
-                   ../../Classes/CharacterNameScene.cpp\
+                   ../../Classes/ScenarioConfig.cpp\
+                   ../../Classes/ScenarioModel.cpp\
+                   ../../Classes/ScenarioScene.cpp\
+                   ../../Classes/StoryConfig.cpp\
+                   ../../Classes/StoryController.cpp\
+                   ../../Classes/StoryModel.cpp\
+                   ../../Classes/StoryScene.cpp\
+                   ../../Classes/TextWallLayer.cpp\
+                   ../../Classes/TileMapConfig.cpp\
+                   ../../Classes/TileMapLayer.cpp\
+                   ../../Classes/TileMapModel.cpp\
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../Classes
 

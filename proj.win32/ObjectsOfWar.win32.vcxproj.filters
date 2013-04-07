@@ -1,238 +1,321 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="source">
-      <UniqueIdentifier>{57ee625f-77ff-4c63-a4bb-c3e0c184671e}</UniqueIdentifier>
-      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    <Filter Include="Models">
+      <UniqueIdentifier>{3ceb8f30-bc01-49f7-823d-8b293874c066}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include">
-      <UniqueIdentifier>{f0877a65-d141-48fe-96de-1c253a316fca}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{30190494-1039-4dc5-9d85-978edf260fd6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="resource">
+    <Filter Include="Layers">
+      <UniqueIdentifier>{1ec8d907-673b-43de-a855-a412159b7330}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
       <UniqueIdentifier>{3a4ce3cb-984b-4139-ba2b-4baf7bbfa18e}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;png;manifest</Extensions>
     </Filter>
-    <Filter Include="resource\galaxyS3">
+    <Filter Include="Resources\galaxyS3">
       <UniqueIdentifier>{5e6b1585-afa5-4cd1-89ea-82b93af46324}</UniqueIdentifier>
     </Filter>
-    <Filter Include="resource\galaxyS3\ui">
+    <Filter Include="Resources\galaxyS3\ui">
       <UniqueIdentifier>{30e78696-a1c8-4d4a-8e93-256ccec8a861}</UniqueIdentifier>
     </Filter>
-    <Filter Include="resource\galaxyS3\sprites">
+    <Filter Include="Resources\galaxyS3\sprites">
       <UniqueIdentifier>{af587dfa-bcf9-4213-a1b7-79368b9c70fa}</UniqueIdentifier>
     </Filter>
-    <Filter Include="resource\audio">
+    <Filter Include="Resources\audio">
       <UniqueIdentifier>{8c561477-6c4a-4621-8da3-e2b3fbc02633}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controllers">
+      <UniqueIdentifier>{aaea7ca8-44ff-4d5e-99af-d4db03158659}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Application">
+      <UniqueIdentifier>{f0877a65-d141-48fe-96de-1c253a316fca}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{6e3bbaf3-243b-42bc-b594-4c3303494f21}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="res\ObjectsOfWar.ico">
-      <Filter>resource</Filter>
+      <Filter>Resources</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\ui\HelloWorld.png">
-      <Filter>resource\galaxyS3\ui</Filter>
+      <Filter>Resources\galaxyS3\ui</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\ui\battle_grass.png">
-      <Filter>resource\galaxyS3\ui</Filter>
+      <Filter>Resources\galaxyS3\ui</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\ui\btn_192x64_pressed.png">
-      <Filter>resource\galaxyS3\ui</Filter>
+      <Filter>Resources\galaxyS3\ui</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\ui\btn_192x64_released.png">
-      <Filter>resource\galaxyS3\ui</Filter>
+      <Filter>Resources\galaxyS3\ui</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\ui\CloseNormal.png">
-      <Filter>resource\galaxyS3\ui</Filter>
+      <Filter>Resources\galaxyS3\ui</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\ui\CloseSelected.png">
-      <Filter>resource\galaxyS3\ui</Filter>
+      <Filter>Resources\galaxyS3\ui</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\ui\cursor.png">
-      <Filter>resource\galaxyS3\ui</Filter>
+      <Filter>Resources\galaxyS3\ui</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\ui\title.png">
-      <Filter>resource\galaxyS3\ui</Filter>
+      <Filter>Resources\galaxyS3\ui</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\bad_knight_001.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\knight_green_007.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\bad_knight_002.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\bad_knight_003.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\bad_knight_004.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\bad_knight_005.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\bad_knight_006.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\bad_knight_007.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\boot.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\button_64x64.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\button_pressed_64x64.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\cursor_blue.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\cursor_red.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\cursor_yellow.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\harpy_001.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\harpy_002.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\harpy_003.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\harpy_004.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\harpy_005.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\harpy_006.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\harpy_007.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\hawk_knight_001.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\hawk_knight_002.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\hawk_knight_003.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\hawk_knight_004.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\hawk_knight_005.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\hawk_knight_006.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\hawk_knight_007.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\knight_green_001.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\knight_green_002.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\knight_green_003.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\knight_green_004.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\knight_green_005.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\knight_green_006.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\small_boot.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\sword.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\tile_green_48x48.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\tile_red_48x48.png">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\sprites-hd.pvr.ccz">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\sprites-hd.pv.plist">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\galaxyS3\sprites\sprite_sheet.tps">
-      <Filter>resource\galaxyS3\sprites</Filter>
+      <Filter>Resources\galaxyS3\sprites</Filter>
     </None>
     <None Include="..\Resources\audio\enemy_move.mp3">
-      <Filter>resource\audio</Filter>
+      <Filter>Resources\audio</Filter>
     </None>
     <None Include="..\Resources\audio\player_move.mp3">
-      <Filter>resource\audio</Filter>
+      <Filter>Resources\audio</Filter>
     </None>
     <None Include="..\Resources\audio\theme.mp3">
-      <Filter>resource\audio</Filter>
+      <Filter>Resources\audio</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ObjectsOfWar.rc">
-      <Filter>resource</Filter>
+      <Filter>Resources</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
-      <Filter>include</Filter>
+      <Filter>Application</Filter>
     </ClInclude>
     <ClInclude Include="main.h">
-      <Filter>include</Filter>
+      <Filter>Application</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\AppDelegate.h">
-      <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\HelloWorldScene.h">
-      <Filter>include</Filter>
+      <Filter>Application</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\AppMacros.h">
-      <Filter>include</Filter>
+      <Filter>Application</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\StringTable.h">
-      <Filter>include</Filter>
+    <ClInclude Include="..\Classes\ScenarioModel.h">
+      <Filter>Models</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\NewGameIntroScene.h">
-      <Filter>include</Filter>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>Scenes</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\CharacterNameScene.h">
-      <Filter>include</Filter>
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NewGameIntroScene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ScenarioScene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StringTable.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameDataModel.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StoryConfig.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StoryModel.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StoryController.h">
+      <Filter>Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StoryScene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TextWallLayer.h">
+      <Filter>Layers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\ScenarioConfig.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TileMapModel.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TileMapConfig.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TileMapLayer.h">
+      <Filter>Layers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\AppDelegate.cpp">
-      <Filter>source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
-      <Filter>source</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\NewGameIntroScene.cpp">
-      <Filter>source</Filter>
+    <ClCompile Include="..\Classes\ScenarioModel.cpp">
+      <Filter>Models</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\CharacterNameScene.cpp">
-      <Filter>source</Filter>
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\NewGameIntroScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ScenarioScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Application</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameDataModel.cpp">
+      <Filter>Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\StoryModel.cpp">
+      <Filter>Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\StoryConfig.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\StoryController.cpp">
+      <Filter>Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\StoryScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TextWallLayer.cpp">
+      <Filter>Layers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ScenarioConfig.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TileMapModel.cpp">
+      <Filter>Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TileMapConfig.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TileMapLayer.cpp">
+      <Filter>Layers</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

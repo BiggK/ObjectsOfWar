@@ -31,7 +31,7 @@ bool AppDelegate::applicationDidFinishLaunching()
 	CCSize frameSize = pEGLView->getFrameSize();
 
 	//set scaling, resource directory according to screen resolution
-	CCFileUtils::sharedFileUtils()->setResourceDirectory(galaxyS3Resource.directory);
+	CCFileUtils::sharedFileUtils()->addSearchPath(galaxyS3Resource.directory);
     pDirector->setContentScaleFactor(MIN(galaxyS3Resource.size.height/designResolutionSize.height, galaxyS3Resource.size.width/designResolutionSize.width));
 
     // turn on display FPS

@@ -18,11 +18,13 @@
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -183,17 +185,41 @@
     <ClInclude Include="..\Classes\AppDelegate.h" />
     <ClInclude Include="..\Classes\AppMacros.h" />
     <ClInclude Include="..\Classes\CharacterNameScene.h" />
+    <ClInclude Include="..\Classes\GameDataModel.h" />
     <ClInclude Include="..\Classes\HelloWorldScene.h" />
     <ClInclude Include="..\Classes\NewGameIntroScene.h" />
+    <ClInclude Include="..\Classes\ScenarioConfig.h" />
+    <ClInclude Include="..\Classes\TileMapConfig.h" />
+    <ClInclude Include="..\Classes\TileMapLayer.h" />
+    <ClInclude Include="..\Classes\TileMapModel.h" />
+    <ClInclude Include="..\Classes\ScenarioModel.h" />
+    <ClInclude Include="..\Classes\ScenarioScene.h" />
+    <ClInclude Include="..\Classes\StoryConfig.h" />
+    <ClInclude Include="..\Classes\StoryController.h" />
+    <ClInclude Include="..\Classes\StoryModel.h" />
+    <ClInclude Include="..\Classes\StoryScene.h" />
     <ClInclude Include="..\Classes\StringTable.h" />
+    <ClInclude Include="..\Classes\TextWallLayer.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
     <ClCompile Include="..\Classes\CharacterNameScene.cpp" />
+    <ClCompile Include="..\Classes\GameDataModel.cpp" />
     <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
     <ClCompile Include="..\Classes\NewGameIntroScene.cpp" />
+    <ClCompile Include="..\Classes\ScenarioConfig.cpp" />
+    <ClCompile Include="..\Classes\TileMapConfig.cpp" />
+    <ClCompile Include="..\Classes\TileMapLayer.cpp" />
+    <ClCompile Include="..\Classes\TileMapModel.cpp" />
+    <ClCompile Include="..\Classes\ScenarioModel.cpp" />
+    <ClCompile Include="..\Classes\ScenarioScene.cpp" />
+    <ClCompile Include="..\Classes\StoryConfig.cpp" />
+    <ClCompile Include="..\Classes\StoryController.cpp" />
+    <ClCompile Include="..\Classes\StoryModel.cpp" />
+    <ClCompile Include="..\Classes\StoryScene.cpp" />
+    <ClCompile Include="..\Classes\TextWallLayer.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
