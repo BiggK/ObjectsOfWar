@@ -186,6 +186,7 @@
     <ClInclude Include="..\Classes\AppMacros.h" />
     <ClInclude Include="..\Classes\CharacterNameScene.h" />
     <ClInclude Include="..\Classes\GameDataModel.h" />
+    <ClInclude Include="..\Classes\DataManager.h" />
     <ClInclude Include="..\Classes\HelloWorldScene.h" />
     <ClInclude Include="..\Classes\NewGameIntroScene.h" />
     <ClInclude Include="..\Classes\ScenarioConfig.h" />
@@ -206,6 +207,7 @@
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
     <ClCompile Include="..\Classes\CharacterNameScene.cpp" />
+    <ClCompile Include="..\Classes\DataManager.cpp" />
     <ClCompile Include="..\Classes\GameDataModel.cpp" />
     <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
     <ClCompile Include="..\Classes\NewGameIntroScene.cpp" />

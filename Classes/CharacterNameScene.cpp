@@ -3,6 +3,7 @@
 #include "GameDataModel.h"
 #include "ScenarioScene.h"
 #include "ScenarioConfig.h"
+#include "DataManager.h"
 
 using namespace cocos2d;
 
@@ -163,6 +164,7 @@ void CharacterNameScene::SkipButtonCallback(CCObject* pSender)
 
 	CCDirector *pDirector = CCDirector::sharedDirector();
 	ScenarioScene* pScene = ScenarioScene::create();
+	DataManager::SaveGame();
 	//TODO: Memory Leak
 	pScene->LoadModel(new ScenarioConfig_001());
 	pScene->init();

@@ -17,8 +17,8 @@ public:
     }
 
 	void init();
+	const char* GetPlayerName(){return m_playerName;}
 	void SetPlayerName(const char* playerName){m_playerName = playerName;}
-
 private:
 	//singleton stuff
 	GameDataModel(void);
