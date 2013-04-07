@@ -1,19 +1,19 @@
-#include "ScenarioMapLayer.h"
+#include "TileMapLayer.h"
 #include "SimpleAudioEngine.h"
 
 //constructor- get set up for init
-ScenarioMapLayer::ScenarioMapLayer()
+TileMapLayer::TileMapLayer()
 {}
 //destructor- delete any pointers here
-ScenarioMapLayer::~ScenarioMapLayer()
+TileMapLayer::~TileMapLayer()
 {}
-void ScenarioMapLayer::onExit(){
+void TileMapLayer::onExit(){
 	this->removeAllChildrenWithCleanup(true);
 	CCDirector::sharedDirector()->getTouchDispatcher()->removeDelegate(static_cast<CCTargetedTouchDelegate*>(this));
 	//this->removeAllChildrenWithCleanup(true);
 }
 //initialize the gobs of stuff needed by the map
-bool ScenarioMapLayer::init()
+bool TileMapLayer::init()
 {
 	if ( CCLayerColor::initWithColor( ccc4(0,0,0,0) ) )
 	{
@@ -33,18 +33,18 @@ bool ScenarioMapLayer::init()
 	}
 }
 
-bool ScenarioMapLayer::LoadModel(ScenarioMapModel* scenarioMapModel)
+bool TileMapLayer::LoadModel(TileMapModel* tileMapModel)
 {
-	m_pScenarioMapModel = scenarioMapModel;
+	m_pTileMapModel = tileMapModel;
 	//add the tilemap
-	m_pTileMap = CCTMXTiledMap::create(m_pScenarioMapModel->GetMapPath());
+	m_pTileMap = CCTMXTiledMap::create(m_pTileMapModel->GetMapPath());
 	m_pTileMap->retain();
 	//get the background layer
 	m_pBackgroundLayer = m_pTileMap->layerNamed("Tile Layer 1");
 	m_pBackgroundLayer->retain();
 	m_pTileMap->layerNamed("Tile Layer 1")->getTiles();
 	//add the audio
-	CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic(m_pScenarioMapModel->GetMusicPath()); 
+	CocosDenshion::SimpleAudioEngine::sharedEngine()->playBackgroundMusic(m_pTileMapModel->GetMusicPath()); 
 		
 	this->addChild(m_pTileMap);
 	return true;

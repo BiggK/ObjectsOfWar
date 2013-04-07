@@ -234,9 +234,6 @@
     <ClInclude Include="..\Classes\StringTable.h">
       <Filter>Resources</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\ScenarioMapLayer.h">
-      <Filter>Layers</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\GameDataModel.h">
       <Filter>Models</Filter>
     </ClInclude>
@@ -255,14 +252,17 @@
     <ClInclude Include="..\Classes\TextWallLayer.h">
       <Filter>Layers</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\ScenarioMapConfig.h">
-      <Filter>Config</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\ScenarioMapModel.h">
-      <Filter>Models</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\ScenarioConfig.h">
       <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TileMapModel.h">
+      <Filter>Models</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TileMapConfig.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TileMapLayer.h">
+      <Filter>Layers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -287,9 +287,6 @@
     <ClCompile Include="main.cpp">
       <Filter>Application</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\ScenarioMapLayer.cpp">
-      <Filter>Layers</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\GameDataModel.cpp">
       <Filter>Models</Filter>
     </ClCompile>
@@ -308,14 +305,17 @@
     <ClCompile Include="..\Classes\TextWallLayer.cpp">
       <Filter>Layers</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\ScenarioMapConfig.cpp">
-      <Filter>Config</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\ScenarioMapModel.cpp">
-      <Filter>Models</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\ScenarioConfig.cpp">
       <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TileMapModel.cpp">
+      <Filter>Models</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TileMapConfig.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TileMapLayer.cpp">
+      <Filter>Layers</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

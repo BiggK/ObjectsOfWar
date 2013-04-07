@@ -24,9 +24,9 @@ bool ScenarioScene::LoadModel(ScenarioModel* scenarioModel)
 {
 	m_pScenarioModel = scenarioModel;
 	//Load the scenario map layer from the scenario config
-	m_pScenarioMapLayer = ScenarioMapLayer::create();
-	m_pScenarioMapLayer->LoadModel(m_pScenarioModel->GetScenarioMapModel());
-	this->addChild(m_pScenarioMapLayer);
+	m_pTileMapLayer = TileMapLayer::create();
+	m_pTileMapLayer->LoadModel(m_pScenarioModel->GetTileMapModel());
+	this->addChild(m_pTileMapLayer);
 	return true;
 }
 void ScenarioScene::Update(float dt)

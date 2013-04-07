@@ -1,6 +1,6 @@
-#include "ScenarioMapConfig.h"
+#include "TileMapConfig.h"
 
-ScenarioMapConfig_001::ScenarioMapConfig_001()
+TileMapConfig_001::TileMapConfig_001():TileMapModel()
 {
 	m_pMapPath = "maps/test_scenario.tmx";
 	m_pMusicPath = "audio/player_move.mp3";
